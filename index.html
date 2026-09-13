@@ -1,11 +1,211 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="container">
+          <nav>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#code">Code</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#english">English</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <div class="container">
+          <div class="me">
+            <div class="img">
+              <img
+                src="./assets/images/demo.webp"
+                alt="Demo's Profile Avatar"
+              />
+            </div>
+            <div class="name-and-info">
+              <h1>Demo Lomsadze</h1>
+              <p class="position">Junior Frontend Engineer | Web Developer</p>
+              <div class="info">
+                <span
+                  ><img
+                    src="./assets/icons/location.svg"
+                    alt="location"
+                  />Tbilisi, Georgia</span
+                >
+                <span
+                  ><img src="./assets/icons/timezone.svg" alt="location" />GMT+4
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="sections-wrapper">
+            <div class="sections">
+              <div id="about">
+                <h2>
+                  <img
+                    src="./assets/icons/profile.svg"
+                    alt="profile icon"
+                  />About Me
+                </h2>
+                <p>
+                  A Master’s in IT graduate and current college student
+                  currently working as a React Developer Intern at an
+                  international tech organization. Combining academic depth with
+                  hands-on experience gained through multiple programming
+                  courses and international internships, I am driven by a
+                  passion for lifelong learning, rapid skill acquisition, and
+                  active engagement within the professional tech community. My
+                  immediate goal is to expand my practical knowledge, build a
+                  robust foundation in both technical and soft skills, and
+                  successfully transition into a full-time career in software
+                  development.
+                </p>
+              </div>
+              <div id="projects">
+                <h2>
+                  <img
+                    src="./assets/icons/projects.svg"
+                    alt="projects icon"
+                  />Featured Projects
+                </h2>
+                <div class="project">
+                  <div>
+                    <h3>demshop</h3>
+                    <p>An e-commerce website</p>
+                  </div>
+                  <div class="actions">
+                    <div class="repo">
+                      <a
+                        href="https://github.com/Demsource/demshop"
+                        target="_blank"
+                      >
+                        <img
+                          src="./assets/icons/repo.svg"
+                          alt="Repository icon"
+                        />Repository
+                      </a>
+                    </div>
+                    <div class="live-demo">
+                      <a href="https://demshop.vercel.app/" target="_blank">
+                        <img
+                          src="./assets/icons/live-link.svg"
+                          alt="External link icon"
+                        />Live Demo</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="project">
+                  <div>
+                    <h3>carbon-footprint</h3>
+                    <p>A Carbon footprint web app</p>
+                  </div>
+                  <div class="actions">
+                    <div class="repo">
+                      <a
+                        href="https://github.com/Demsource/carbon-footprint"
+                        target="_blank"
+                      >
+                        <img
+                          src="./assets/icons/repo.svg"
+                          alt="Repository icon"
+                        />Repository
+                      </a>
+                    </div>
+                    <div class="live-demo">
+                      <a
+                        href="https://demsource.github.io/carbon-footprint/"
+                        target="_blank"
+                      >
+                        <img
+                          src="./assets/icons/live-link.svg"
+                          alt="External link icon"
+                        />Live Demo</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="project">
+                  <div>
+                    <h3>interactive-quiz</h3>
+                    <p>An interactive quiz app. Questions about React</p>
+                  </div>
+                  <div class="actions">
+                    <div class="repo">
+                      <a
+                        href="https://github.com/Demsource/um-interactive-quiz"
+                        target="_blank"
+                      >
+                        <img
+                          src="./assets/icons/repo.svg"
+                          alt="Repository icon"
+                        />Repository
+                      </a>
+                    </div>
+                    <div class="live-demo">
+                      <a
+                        href="https://demsource.github.io/um-interactive-quiz/"
+                        target="_blank"
+                      >
+                        <img
+                          src="./assets/icons/live-link.svg"
+                          alt="External link icon"
+                        />Live Demo</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="code">
+                <h2>
+                  <img src="./assets/icons/code.svg" alt="projects icon" />Code
+                  Example
+                </h2>
+                <p>
+                  Algorithmic solution for Codewars problem: Get the mean of an
+                  array
+                </p>
+                <pre><code>function getAverage(marks) {
+  let sum = marks.reduce((acc, x) =&gt; acc + x, 0)
+  let av = sum / marks.length
+
+  return Math.floor(av)
+}</code></pre>
+              </div>
+              <div id="experience">
+                <h2>
+                  <img src="./assets/icons/work.svg" alt="work bag icon" />Work
+                  Experience
+                </h2>
+                <div class="experience-wrapper">
+                  <div class="experience">
+                    <div class="job">
+                      <h3>React Developer Intern</h3>
+                      <p>youbloom</p>
+                    </div>
+                    <div class="date">2026-Present</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="asides">ASIDE</div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="container">Footer content limited to 1440px</div>
+      </footer>
+    </div>
+  </body>
 </html>
