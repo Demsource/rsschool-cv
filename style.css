@@ -321,6 +321,28 @@ ul.contacts {
   }
 }
 
+#english {
+  scroll-margin-top: 80px;
+}
+
+.prof {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+
+  .lev {
+    background-color: #e5eeff;
+    border-radius: 10px;
+    color: #0051d5;
+    font-weight: bold;
+    padding: 10px;
+  }
+  .desc {
+    color: #64748b;
+  }
+}
+
 footer {
   margin-top: 48px;
 }
