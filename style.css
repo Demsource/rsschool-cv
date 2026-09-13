@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.page:has(#about:target) a[href="#about"],
+.page:has(#projects:target) a[href="#projects"],
+.page:has(#code:target) a[href="#code"],
+.page:has(#experience:target) a[href="#experience"],
+.page:has(#contact:target) a[href="#contact"],
+.page:has(#skills:target) a[href="#skills"],
+.page:has(#education:target) a[href="#education"],
+.page:has(#english:target) a[href="#english"] {
+  border-bottom: 2px solid #2563eb;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255, 0.85);
+  border-bottom: 1px solid rgba(248, 249, 255, 0.85);
+  box-shadow: 0 1px 8px 0 rgb(0 0 0 / 15%);
+  padding-block: 20px;
+
+  ul {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 92px;
+}
+
+.me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 32px;
+  box-shadow: 0 1px 8px 0 rgb(0 0 0 / 15%);
+
+  .img {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 100%;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .name-and-info {
+    .position {
+      color: #64748b;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    .info span {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .info span:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.sections-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+
+  .sections {
+    max-width: 60%;
+
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  .asides {
+    width: 35%;
+  }
+}
+
+#about {
+  box-shadow: 0 1px 8px 0 rgb(0 0 0 / 15%);
+  padding: 5%;
+  scroll-margin-top: 80px;
+
+  p {
+    margin-top: 10px;
+    font-size: 32px;
+  }
+}
+
+#projects {
+  box-shadow: 0 1px 8px 0 rgb(0 0 0 / 15%);
+  padding: 5%;
+  margin-top: 48px;
+  scroll-margin-top: 80px;
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  p {
+    color: #64748b;
+  }
+  .actions {
+    display: flex;
+    gap: 10px;
+
+    a {
+      text-decoration: none;
+    }
+
+    img {
+      margin-right: 10px;
+    }
+
+    div {
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .repo {
+      background-color: #e5eeff;
+      color: black;
+
+      a {
+        color: black;
+      }
+    }
+    .live-demo {
+      background-color: black;
+
+      a {
+        color: white;
+      }
+    }
+  }
+}
+
+.project:not(:last-child) {
+  border-bottom: 1px solid rgba(100, 116, 139, 0.3);
+  padding-bottom: 20px;
+}
+
+#code {
+  box-shadow: 0 1px 8px 0 rgb(0 0 0 / 15%);
+  padding: 5%;
+  margin-top: 48px;
+  scroll-margin-top: 80px;
+
+  p {
+    margin-top: 20px;
+  }
+
+  pre {
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+  }
+}
+
+#experience {
+  box-shadow: 0 1px 8px 0 rgb(0 0 0 / 15%);
+  padding: 5%;
+  margin-top: 48px;
+  scroll-margin-top: 80px;
+}
+
+.experience-wrapper {
+  margin-top: 20px;
+}
+
+.experience {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .date {
+    background-color: #64748b;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 10px;
+  }
+}
+
+.asides {
+  aside {
+    box-shadow: 0 1px 8px 0 rgb(0 0 0 / 15%);
+    padding: 5%;
+    width: 100%;
+  }
+  aside:not(:first-child) {
+    margin-top: 30px;
+  }
+
+  h2 {
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 10px;
+    }
+  }
+}
+
+#contact {
+  scroll-margin-top: 80px;
+}
+
+ul.contacts {
+  list-style-type: none;
+  margin-top: 20px;
+
+  .contact {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+
+    h3 img {
+      margin-right: 10px;
+    }
+
+    .info h3 {
+      color: #64748b;
+    }
+    .info p {
+      margin-top: 5px;
+    }
+    .info a {
+      color: black;
+      text-decoration: none;
+    }
+  }
+  .contact:not(:first-child) {
+    margin-top: 20px;
+  }
+}
+
+#skills {
+  scroll-margin-top: 80px;
+}
+
+.skillset {
+  margin-top: 20px;
+
+  h3 {
+    color: #64748b;
+  }
+
+  ul.set {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+
+    li {
+      background-color: #eff4ff;
+      border-radius: 10px;
+      padding: 5px 10px;
+    }
+  }
+}
+
+#education {
+  scroll-margin-top: 80px;
+}
+
+ul.edus {
+  list-style-type: none;
+  margin-top: 20px;
+
+  li.edu {
+    display: flex;
+    justify-content: space-between;
+
+    .name p {
+      color: #0051d5;
+    }
+
+    .date {
+      color: #64748b;
+    }
+  }
+  .edu:not(:first-child) {
+    margin-top: 10px;
+  }
+}
+
+#english {
+  scroll-margin-top: 80px;
+}
+
+.prof {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+
+  .lev {
+    background-color: #e5eeff;
+    border-radius: 10px;
+    color: #0051d5;
+    font-weight: bold;
+    padding: 10px;
+  }
+  .desc {
+    color: #64748b;
+  }
+}
+
+footer {
+  border-top: 1px solid rgba(248, 249, 255, 0.85);
+  box-shadow: 0 -1px 8px 0 rgb(0 0 0 / 15%);
+  padding: 20px;
+  margin-top: 48px;
+
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .my-github {
+    display: flex;
+    gap: 20px;
+  }
+  .rs-school {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img {
+      width: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .sections-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about {
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .asides {
+    margin-top: 30px;
+  }
+}
