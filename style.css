@@ -225,6 +225,9 @@ main {
     padding: 5%;
     width: 100%;
   }
+  aside:not(:first-child) {
+    margin-top: 30px;
+  }
 
   h2 {
     display: flex;
@@ -233,35 +236,88 @@ main {
       margin-right: 10px;
     }
   }
+}
 
-  ul#contact {
-    list-style-type: none;
-    margin-top: 20px;
-    scroll-margin-top: 180px;
-  }
+#contact {
+  scroll-margin-top: 80px;
+}
+
+ul.contacts {
+  list-style-type: none;
+  margin-top: 20px;
 
   .contact {
     display: flex;
     align-items: start;
     gap: 20px;
+
+    h3 img {
+      margin-right: 10px;
+    }
+
+    .info h3 {
+      color: #64748b;
+    }
+    .info p {
+      margin-top: 5px;
+    }
+    .info a {
+      color: black;
+      text-decoration: none;
+    }
   }
   .contact:not(:first-child) {
     margin-top: 20px;
   }
+}
 
-  h3 img {
-    margin-right: 10px;
-  }
+#skills {
+  scroll-margin-top: 80px;
+}
 
-  .info h3 {
+.skillset {
+  margin-top: 20px;
+
+  h3 {
     color: #64748b;
   }
-  .info p {
-    margin-top: 5px;
+
+  ul.set {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+
+    li {
+      background-color: #eff4ff;
+      border-radius: 10px;
+      padding: 5px 10px;
+    }
   }
-  .info a {
-    color: black;
-    text-decoration: none;
+}
+
+#education {
+  scroll-margin-top: 80px;
+}
+
+.edus {
+  margin-top: 20px;
+
+  .edu {
+    display: flex;
+    justify-content: space-between;
+
+    .name p {
+      color: #0051d5;
+    }
+
+    .date {
+      color: #64748b;
+    }
+  }
+  .edu:not(:first-child) {
+    margin-top: 10px;
   }
 }
 
