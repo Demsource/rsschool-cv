@@ -363,7 +363,7 @@ footer {
     text-decoration: none;
   }
 
-  .my-github {
+  .my-github ul {
     display: flex;
     gap: 20px;
   }
