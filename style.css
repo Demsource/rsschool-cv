@@ -301,10 +301,11 @@ ul.contacts {
   scroll-margin-top: 80px;
 }
 
-.edus {
+ul.edus {
+  list-style-type: none;
   margin-top: 20px;
 
-  .edu {
+  li.edu {
     display: flex;
     justify-content: space-between;
 
